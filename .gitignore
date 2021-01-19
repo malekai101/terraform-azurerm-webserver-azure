@@ -1,5 +1,6 @@
 # Local .terraform directories
 **/.terraform/*
+.terraform*
 
 # .tfstate files
 *.tfstate
@@ -13,6 +14,7 @@ crash.log
 # version control.
 #
 # example.tfvars
+*.tfvars
 
 # Ignore override files as they are usually used to override resources locally and so
 # are not checked in
@@ -27,3 +29,16 @@ override.tf.json
 
 # Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
 # example: *tfplan*
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# Upload Vault binary for Packer
+packer/vault*.zip 
+
+# Mac ds
+.DS_Store 
+
+# backend
+terraform.tf
